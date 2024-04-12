@@ -1,0 +1,43 @@
+mixin promo()
+    +b('section').promo
+        +e.header
+            +e.header__logo.fadeInLeft.wow(data-wow-duration="2.5s")
+                img( class="logo" src='/images/woman-logo.svg')
+            +e.header__text.fadeInRight.wow(data-wow-duration="2.5s") специальный проект
+        +e.wrap.fadeIn.wow(data-wow-duration="2.5s")
+            +e.wrap__logo
+                img( class="logo" src='/images/logo.png')
+            +e('p').wrap__title Ничего
+            +e('p').wrap__slogan не раздражает
+            +e('p').wrap__text Источники раздражения у каждой свои.<br>Но погасить большинство из них можно<br>простым способом – любовью<br>и вниманием к себе.
+            +e.wrap__link.fadeIn.wow(data-wow-duration="2.5s")
+                img(src='/images/down-arrow.png')
+            +e.wrap__bg
+                img(src='/images/promo-img.png')
+        +e.wrap__info
+            +e.wrap__info-text.fadeIn.wow(data-wow-duration="2.5s") Dove – это нежные антиперспиранты с ¼ увлажняющего крема. Он обеспечивает мягкую защиту и заботится о коже. Вместе с ним мы придумали этот тест. Он поможет справиться с раздражениями и дать совет, как их преодолеть.<br><br>Ведь Dove – твоя защита от раздражений.
+            +e.wrap__info-img-left.fadeInLeft.wow(data-wow-duration="2.5s")
+                img(src='/images/promo-img-1.png')
+            +e.wrap__info-img-right.fadeInRight.wow(data-wow-duration="2.5s")
+                img(src='/images/promo-img-2.png')
+            +e.wrap__info-img-mobile.fadeInRight.wow(data-wow-duration="2.5s")
+                img(src='/images/promo-img-mobile.png')
+        +e.wrap__play
+            +e.wrap__play-title.fadeIn.wow(data-wow-duration="2.5s") выберите пять стикеров
+            +e.wrap__card.one.fadeIn.wow(data-wow-duration="2.5s")(id='А')
+            +e.wrap__card.two.fadeIn.wow(data-wow-duration="2.5s")(id='А')
+            +e.wrap__card.three.fadeIn.wow(data-wow-duration="2.5s")(id='Б')
+            +e.wrap__card.four.fadeIn.wow(data-wow-duration="2.5s")(id='А') 
+            +e.wrap__card.five.fadeIn.wow(data-wow-duration="2.5s")(id='В') 
+            +e.wrap__card.six.fadeIn.wow(data-wow-duration="2.5s")(id='В')
+            +e.wrap__card.seven.fadeIn.wow(data-wow-duration="2.5s")(id='Б')
+            +e.wrap__card.eight.fadeIn.wow(data-wow-duration="2.5s")(id='В')
+            +e.wrap__card.nine.fadeIn.wow(data-wow-duration="2.5s")(id='Б')
+            +e.wrap__card.ten.fadeIn.wow(data-wow-duration="2.5s")(id='А')
+            +e.wrap__card.eleven.fadeIn.wow(data-wow-duration="2.5s")(id='Б')
+            +e.wrap__card.twelve.fadeIn.wow(data-wow-duration="2.5s")(id='В')
+            +e.wrap__card.thirteen.fadeIn.wow(data-wow-duration="2.5s")(id='Б')
+            +e.wrap__card.fourteen.fadeIn.wow(data-wow-duration="2.5s")(id='А')
+            +e.wrap__card.fifteen.fadeIn.wow(data-wow-duration="2.5s")(id='В')
+
+        +e('p').footer © 2023 HSM Production

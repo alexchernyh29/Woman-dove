@@ -1,0 +1,619 @@
+.promo
+    position relative
+    background-color $c-white
+    width 100%
+    height 100%
+
+    &__header
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        margin w(15) w(35)
+
+        +below(768px)
+            margin wm(20) wm(15)
+
+    &__header__logo
+        width w(170)
+        img
+            width 100%
+
+        +below(768px)
+            width wm(120)
+
+    &__header__text
+        font-family $ff-HelveticaNeueCyr-Roman
+        font-weight 400
+        font-size w(20)
+        line-height w(24)
+        color $c-blue
+
+        +below(768px)
+            font-size wm(14)
+            line-height wm(18)
+
+    &__wrap
+        position relative
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        z-index 1
+
+        +below(768px)
+            margin wm(10) wm(5)
+
+    &__wrap__logo
+        width w(210)
+        img
+            width 100%
+
+        +below(768px)
+            width wm(110)
+
+    &__wrap__title
+        margin-top w(30)
+        padding-right w(10)
+        font-family $ff-Elina
+        font-weight 300
+        font-size w(160)
+        line-height w(165)
+        text-align center
+        color transparent
+        background $c-yellow
+        -webkit-background-clip text
+        background-clip text
+        z-index 2
+
+        +below(768px)
+            margin-top wm(30)
+            padding-right wm(10)
+            font-size wm(62)
+            line-height wm(66)
+
+    &__wrap__slogan
+        font-family $ff-HelveticaNeueCyr-Light
+        font-weight 400
+        font-size w(160)
+        line-height w(165)
+        text-align center
+        color $c-blue
+        z-index 2
+
+        +below(768px)
+            font-size wm(42)
+            line-height wm(50)
+
+    &__wrap__text
+        margin-top w(60)
+        margin-bottom w(45)
+        font-family $ff-HelveticaNeueCyr-Light
+        font-weight 400
+        font-size w(36)
+        line-height w(39)
+        text-align center
+        color $c-blue
+        z-index 2
+
+        +below(768px)
+            margin-top wm(30)
+            margin-bottom wm(115)
+            font-size wm(16)
+            line-height wm(20)
+
+    &__wrap__link
+        width w(140)
+        z-index 2
+        animation: moveUpDown 2s infinite linear;
+        img
+            width 100%
+
+        +below(768px)
+            width wm(65)
+
+    &__wrap__bg
+        position absolute
+        top w(50)
+        left w(0)
+        width 100%
+        z-index 1
+        img
+            width 100%
+
+        +below(768px)
+            top 65%
+            left wm(0)
+
+    &__wrap__info-text
+        margin-top w(300)
+        width 100%
+        max-width w(820)
+        font-family $ff-HelveticaNeueCyr-Light
+        font-weight 300
+        font-size w(36)
+        line-height w(40)
+        text-align center
+        color $c-blue
+        z-index 2
+
+        +below(768px)
+            max-width wm(280)
+            margin wm(100) wm(20) wm(0)
+            font-size wm(16)
+            line-height wm(20)
+            padding-bottom wm(400)
+
+    &__wrap__info
+        position relative
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        z-index 1
+
+    &__wrap__info-img-left
+        position absolute
+        left 0
+        top w(-100)
+        width w(680)
+        img
+            width 100%
+
+        +below(768px)
+            display none
+
+    &__wrap__info-img-right
+        position absolute
+        right 0
+        top 0
+        width w(640)
+        img
+            width 100%
+
+        +below(768px)
+            display none
+
+    &__wrap__info-img-mobile
+        display none
+        img
+            width 100%
+
+        +below(768px)
+            display block
+            position absolute
+            right 0
+            bottom 0
+            width 100%
+
+    &__wrap__play
+        position relative
+        margin w(400) w(30) w(60)
+        height w(1150)
+
+        +below(768px)
+            margin wm(50) wm(10) wm(10)
+            height wm(1150)
+    
+    &__wrap__play-title
+        z-index 3
+        font-family $ff-Elina
+        font-weight 400
+        font-size w(60)
+        line-height w(66)
+        text-align center
+        background linear-gradient(90deg, #8c5e22 0%, #e3b077 26.54%, #8c5e22 55%, #eab67d 80.8%, #8c5e22 100%);
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+        +below(768px)
+            font-size wm(30)
+            line-height wm(36)
+
+    &__footer
+        position absolute
+        bottom w(20)
+        left w(50)
+        font-family $ff-HelveticaNeueCyr-Roman
+        font-weight 400
+        font-size w(20)
+        line-height w(25)
+        color $c-blue
+
+        +below(768px)
+            font-size wm(14)
+            line-height wm(20)
+
+    &__wrap__card
+        position absolute
+        &.one
+            width w(256)
+            height w(260)
+            top 8%
+            left 4%
+            background-image url(/images/img-1.png)
+            background-size 100%
+            transform rotate(10deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-1-h.png)
+
+            +below(768px)
+                width wm(106)
+                height wm(110)
+                top 7%
+                left 1%
+                transform rotate(-10deg)
+
+            &.select
+                background-image url(/images/img-1-h.png)
+
+        &.two
+            width w(400)
+            height w(170)
+            top 18%
+            left 20%
+            background-image url(/images/img-2.png)
+            background-size 100%
+            transform rotate(-5deg)
+            transition 0.2
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-2-h.png)
+
+            +below(768px)
+                width wm(106)
+                height wm(45)
+                top 17%
+                left 1%
+                transform rotate(5deg)
+
+            &.select
+                background-image url(/images/img-2-h.png)
+
+        &.three
+            width w(378)
+            height w(323)
+            top 10%
+            right 35%
+            background-image url(/images/img-3.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                    transition 0.2s
+                    background-image url(/images/img-3-h.png)
+
+            +below(768px)
+                width wm(156)
+                height wm(145)
+                top 7%
+                right 1%
+                transform rotate(5deg)
+
+            &.select
+                background-image url(/images/img-3-h.png)
+
+        &.four
+            width w(340)
+            height w(340)
+            top 1%
+            right 0%
+            background-image url(/images/img-4.png)
+            background-size 100%
+            transform rotate(-10deg)
+            transition 0.2s
+            &:hover
+                    transition 0.2s
+                    background-image url(/images/img-4-h.png)
+
+            &.select
+                background-image url(/images/img-4-h.png)
+
+            +below(768px)
+                width wm(136)
+                height wm(135)
+                top 19%
+                right 1%
+                transform rotate(5deg)
+
+        &.five
+            width w(406)
+            height w(170)
+            top 42%
+            left 0%
+            background-image url(/images/img-5.png)
+            background-size 100%
+            transform rotate(-12deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-5-h.png)
+
+            &.select
+                background-image url(/images/img-5-h.png)
+
+            +below(768px)
+                width wm(136)
+                height wm(55)
+                top 37%
+                left 1%
+                transform rotate(5deg)
+        
+        &.six
+            width w(300)
+            height w(280)
+            top 36%
+            left 23%
+            background-image url(/images/img-6.png)
+            background-size 100%
+            transform rotate(-5deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-6-h.png)
+
+            &.select
+                background-image url(/images/img-6-h.png)
+
+            +below(768px)
+                width wm(156)
+                height wm(135)
+                top 22%
+                left 1%
+                transform rotate(-5deg)
+
+        &.seven
+            width w(425)
+            height w(170)
+            top 33%
+            right 12%
+            background-image url(/images/img-7.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-7-h.png)
+            
+            &.select
+                background-image url(/images/img-7-h.png)
+
+            +below(768px)
+                width wm(136)
+                height wm(55)
+                top 32%
+                right 1%
+                transform rotate(5deg)
+
+        &.eight
+            width w(380)
+            height w(150)
+            top 47%
+            left 40%
+            background-image url(/images/img-8.png)
+            background-size 100%
+            transform rotate(-5deg)
+            transition 0.2s
+            &:hover
+                height w(170)
+                transition 0.2s
+                background-image url(/images/img-8-h.png)
+
+            &.select
+                height w(170)
+                background-image url(/images/img-8-h.png)
+
+            +below(768px)
+                width wm(136)
+                height wm(55)
+                top 51%
+                right 1%
+                transform rotate(-5deg)
+
+                &:hover
+                    height wm(60)
+
+                &.select
+                    height wm(60)
+
+        &.nine
+            width w(320)
+            height w(320)
+            top 51%
+            right 23%
+            background-image url(/images/img-9.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-9-h.png)
+
+            &.select
+                background-image url(/images/img-9-h.png)
+
+            +below(768px)
+                width wm(146)
+                height wm(145)
+                top 36%
+                right 1%
+                transform rotate(-5deg)
+
+        &.ten
+            width w(330)
+            height w(250)
+            top 42%
+            right 0%
+            background-image url(/images/img-10.png)
+            background-size 100%
+            transform rotate(16deg)
+            transition 0.2s
+            &:hover
+                width w(300)
+                height w(270)
+                transition 0.2s
+                background-image url(/images/img-10-h.png)
+
+            &.select
+                width w(300)
+                height w(270)
+                background-image url(/images/img-10-h.png)
+
+            +below(768px)
+                width wm(146)
+                height wm(125)
+                top 72%
+                right 1%
+                transform rotate(5deg)
+
+                &:hover
+                    width wm(146)
+                    height wm(145)
+
+                &.select
+                    width wm(146)
+                    height wm(145)
+                    background-image url(/images/img-10-h.png)
+
+        &.eleven
+            width w(380)
+            height w(380)
+            top 67%
+            left 0%
+            background-image url(/images/img-11.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-11-h.png)
+
+            &.select
+                background-image url(/images/img-11-h.png)
+
+            +below(768px)
+                width wm(146)
+                height wm(145)
+                top 41%
+                right 1%
+                transform rotate(5deg)
+        
+        &.twelve
+            width w(425)
+            height w(170)
+            top 62%
+            left 20%
+            background-image url(/images/img-12.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                height w(220)
+                transition 0.2s
+                background-image url(/images/img-12-h.png)
+
+            &.select
+                height w(220)
+                background-image url(/images/img-12-h.png)
+
+            +below(768px)
+                width wm(146)
+                height wm(65)
+                top 58%
+                left 1%
+                transform rotate(5deg)
+                
+                &:hover
+                    height wm(75)
+                    transition 0.2s
+                    background-image url(/images/img-12-h.png)
+
+                &.select
+                    height wm(75)
+
+        &.thirteen
+            width w(300)
+            height w(300)
+            top 65%
+            right 41%
+            background-image url(/images/img-13.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-13-h.png)
+
+            &.select
+                background-image url(/images/img-13-h.png)
+
+            +below(768px)
+                width wm(150)
+                height wm(150)
+                top 65%
+                left 1%
+
+        &.fourteen
+            width w(425)
+            height w(170)
+            top 88%
+            right 20%
+            background-image url(/images/img-14.png)
+            background-size 100%
+            transform rotate(5deg)
+            transition 0.2s
+            &:hover
+                height w(200)
+                transition 0.2s
+                background-image url(/images/img-14-h.png)
+
+            &.select
+                height w(200)
+                background-image url(/images/img-14-h.png)
+
+            +below(768px)
+                width wm(150)
+                height wm(60)
+                top 80%
+                left 1%
+                
+                &:hover
+                    height wm(70)
+
+                &.select
+                    height wm(70)
+
+        &.fifteen
+            width w(340)
+            height w(340)
+            top 70%
+            right 0%
+            background-image url(/images/img-15.png)
+            background-size 100%
+            transform rotate(10deg)
+            transition 0.2s
+            &:hover
+                transition 0.2s
+                background-image url(/images/img-15-h.png)
+
+            &.select
+                background-image url(/images/img-15-h.png)
+
+            +below(768px)
+                width wm(150)
+                height wm(150)
+                top 60%
+                right 1%
+
+    
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}

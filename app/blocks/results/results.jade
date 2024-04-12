@@ -1,0 +1,22 @@
+mixin results()
+    +b('section').results
+        +e.header__logo
+            img(src='/images/logo-result.png')
+        +e.header
+            +e.header__logo-woman.fadeInLeft.wow(data-wow-duration="2.5s")
+                img( class="logo" src='/images/woman-logo.svg')
+            +e.header__text.fadeInRight.wow(data-wow-duration="2.5s") специальный проект
+        +e.wrap(id='result')
+            +e.wrap-title что происходит
+            +e.wrap-text-1 
+            +e.wrap-title что делать
+            +e.wrap-text-2
+            +e.wrap-button
+                +e('a').button-text Пройти ещё раз
+                +e('a')(href='#' target="_blank").button-text Купить на OZON
+        +e.wrap__info-img-left
+            img(src='/images/promo-img-1.png')
+        +e.wrap__info-img-right
+            img(src='/images/promo-img-2.png')
+        +e.wrap__info-img-mobile.fadeInRight.wow(data-wow-duration="2.5s")
+                img(src='/images/promo-img-mobile.png')

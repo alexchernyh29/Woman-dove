@@ -1,0 +1,192 @@
+.results
+    width 100%
+    height 100%
+    position relative
+    background-color $c-white
+    overflow hidden
+
+    &__header
+        display flex
+        flex-direction row
+        justify-content space-between
+        align-items center
+        margin w(15) w(35)
+        display none
+
+        +below(768px)
+            display block
+            margin wm(20) wm(15)
+
+    &__header__logo-woman
+        width w(170)
+        img
+            width 100%
+
+        +below(768px)
+            width wm(120)
+
+    &__header__text
+        font-family $ff-HelveticaNeueCyr-Roman
+        font-weight 400
+        font-size w(20)
+        line-height w(24)
+        color $c-blue
+
+        +below(768px)
+            font-size wm(14)
+            line-height wm(18)
+
+    &__wrap
+        margin 5% auto
+        width 100%
+        max-width w(830)
+        z-index 2
+        position relative
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        text-align center
+        +below(768px)
+            max-width wm(300)
+            margin 15% auto
+            margin-bottom wm(550)
+
+    &__wrap-title
+        margin-top w(60)
+        font-family $ff-Elina
+        font-weight 400
+        font-size w(60)
+        line-height 116%
+        text-align center
+        background linear-gradient(90deg, #8c5e22 0%, #e3b077 26.54%, #8c5e22 55%, #eab67d 80.8%, #8c5e22 100%)
+        background-clip text
+        -webkit-background-clip text
+        -webkit-text-fill-color transparent
+
+        +below(768px)
+            margin-top wm(30)
+            font-size wm(30)
+            line-height wm(34)
+
+    &__wrap-text-1,
+    &__wrap-text-2
+        margin-top w(60)
+        font-family $ff-HelveticaNeueCyr-Light
+        font-weight 300
+        font-size w(36)
+        line-height w(40)
+        text-align center
+        color #06205C
+        transition 1s
+        span
+            font-weight 700
+            color #072E80
+            &:hover
+                transition 1s
+                text-decoration underline
+            
+        +below(768px)
+            margin-top wm(30)
+            font-size wm(20)
+            line-height wm(24)
+
+    &__wrap__info-img-left
+        position absolute
+        left 0
+        top 10%
+        width w(680)
+        z-index 1
+        img
+            width 100%
+
+        +below(768px)
+            display none
+
+    &__wrap__info-img-right
+        position absolute
+        z-index 1
+        right 0
+        top 10%
+        width w(640)
+        img
+            width 100%
+
+        +below(768px)
+            display none
+
+    &__wrap-button
+        margin-top w(60)
+        display flex
+        flex-direction row
+        
+        +below(768px)
+            margin-top wm(30)
+            flex-direction column
+
+    &__header__logo
+        position absolute
+        top 5%
+        left 10%
+        width w(270)
+        z-index 2
+        img
+            width 100%
+
+        +below(768px)
+            width wm(150)
+            top 70%
+            left 25%
+
+
+    &__button-text
+        padding w(25) w(50)
+        font-family $ff-HelveticaNeueCyr-Medium
+        font-weight 500
+        font-size w(26)
+        text-align center
+        color $c-blue
+        border w(2) solid #bf9561
+        border-radius w(32)
+        transition 0.5s
+        text-decoration none
+
+        &:hover
+            transition 0.5s
+            transform scale(1.2)
+            border w(2) solid rgb(255, 255, 255)
+            border-radius w(32)
+            background linear-gradient(90.00deg, rgb(235, 207, 146),rgb(220, 176, 120) 19.5%,rgb(253, 248, 214) 49%,rgb(220, 176, 120) 80.5%,rgb(235, 207, 146) 100%);
+
+        &:last-child
+            margin-left w(55)
+
+        +below(768px)
+            padding wm(20) wm(40)
+            font-size wm(16)
+            line-height wm(20)
+            border wm(2) solid #bf9561
+            border-radius wm(16)
+            
+            &:hover
+                transition 0.5s
+                transform scale(1.2)
+                border wm(2) solid rgb(255, 255, 255)
+                border-radius wm(16)
+                background linear-gradient(90.00deg, rgb(235, 207, 146),rgb(220, 176, 120) 19.5%,rgb(253, 248, 214) 49%,rgb(220, 176, 120) 80.5%,rgb(235, 207, 146) 100%);
+
+            &:last-child
+                margin-left wm(0)
+                margin-top wm(25)
+
+    &__wrap__info-img-mobile
+        display none
+        img
+            width 100%
+
+        +below(768px)
+            display block
+            position absolute
+            right 0
+            bottom 0
+            width 100%

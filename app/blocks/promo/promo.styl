@@ -43,7 +43,7 @@
         z-index 1
 
         +below(768px)
-            margin wm(10) wm(5)
+            margin wm(10) wm(5) wm(1)
 
     &__wrap__logo
         width w(210)
@@ -140,10 +140,10 @@
 
         +below(768px)
             max-width wm(280)
-            margin wm(100) wm(20) wm(0)
+            margin wm(10) wm(20) wm(0)
             font-size wm(16)
             line-height wm(20)
-            padding-bottom wm(400)
+            padding-bottom wm(330)
 
     &__wrap__info
         position relative
@@ -189,7 +189,7 @@
 
     &__wrap__play
         position relative
-        margin w(400) w(30) w(60)
+        margin w(300) w(30) w(60)
         padding-bottom w(50)
         height w(1200)
 
@@ -199,6 +199,7 @@
             height wm(1150)
     
     &__wrap__play-title
+        position relative
         z-index 3
         font-family $ff-Elina
         font-weight 400
@@ -302,7 +303,7 @@
         &.four
             width w(340)
             height w(340)
-            top 2%
+            top 5%
             right 0%
             background-image url(/images/img-4.png)
             background-size 100%
@@ -555,12 +556,10 @@
             transform rotate(5deg)
             transition 0.2s
             &:hover
-                height w(200)
                 transition 0.2s
                 background-image url(/images/img-14-h.png)
 
             &.select
-                height w(200)
                 background-image url(/images/img-14-h.png)
 
             +below(768px)
@@ -568,12 +567,6 @@
                 height wm(60)
                 top 80%
                 left 1%
-                
-                &:hover
-                    height wm(70)
-
-                &.select
-                    height wm(70)
 
         &.fifteen
             width w(340)

@@ -85,6 +85,13 @@
             &:hover
                 transition 1s
                 text-decoration underline
+            &.small
+                font-size w(22)
+                line-height w(22) 
+                +below(768px)
+                    font-size wm(12)
+                    line-height wm(14)   
+
             
         +below(768px)
             margin-top wm(30)
@@ -190,3 +197,8 @@
             right 0
             bottom 0
             width 100%
+
+.small {
+    font-size w(22)
+    line-height w(22)     
+}
